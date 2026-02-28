@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-TOKEN = "ضع_توكنك_هنا"
+TOKEN = "6899797841:AAHsicM8rF-kIiGfKP87xKC6k6TswwlGzH0"
 
 @app.route("/")
 def home():
@@ -30,3 +30,4 @@ def webhook():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
