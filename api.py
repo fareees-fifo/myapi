@@ -10,7 +10,7 @@ TOKEN = "6899797841:AAHsicM8rF-kIiGfKP87xKC6k6TswwlGzH0"
 def home():
     return "Bot is running successfully!"
 
-@app.route(f"/{6899797841:AAHsicM8rF-kIiGfKP87xKC6k6TswwlGzH0}", methods=["POST"])
+@app.route(f"/{TOKEN}", methods=["POST"])
 def webhook():
     data = request.get_json()
 
@@ -30,3 +30,4 @@ def webhook():
 if name == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
