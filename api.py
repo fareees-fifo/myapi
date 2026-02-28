@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-TOKEN = "6899797841:AAHsicM8rF-kIiGfKP87xKC6k6TswwlGzH0"
+TOKEN = "ضع_توكنك_هنا"
 
 @app.route("/")
 def home():
@@ -20,16 +20,13 @@ def webhook():
 
         reply = "أهلا بك 👋"
 
- requests.post(
-    f"https://api.telegram.org/bot{TOKEN}/sendMessage",
-    json={"chat_id": chat_id, "text": reply}
-)
+        requests.post(
+            f"https://api.telegram.org/bot{TOKEN}/sendMessage",
+            json={"chat_id": chat_id, "text": reply}
+        )
 
     return "ok"
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
-
-
-
