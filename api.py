@@ -20,8 +20,8 @@ def webhook():
 
         reply = "أهلا بك 👋"
 
-        requests.post(
-    "https://api.telegram.org/bot6899797841:AAHsicM8rF-xxxx/sendMessage",
+ requests.post(
+    f"https://api.telegram.org/bot{TOKEN}/sendMessage",
     json={"chat_id": chat_id, "text": reply}
 )
 
@@ -30,5 +30,6 @@ def webhook():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
 
 
