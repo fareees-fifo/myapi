@@ -6,3 +6,4 @@ python-dotenv==1.0.0
 pytz
 psycopg2==2.9.9
 aiofiles==23.2.1
+colorama==0.4.6
