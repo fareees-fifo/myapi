@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 # ==============================
 # CONFIG
 # ==============================
-OWNER_ID = 8488521935
+OWNER_ID = 1710051635
 SLEEP_TIME = 0.09
 PROGRESS_EVERY = 25
 
@@ -131,3 +131,4 @@ async def broadcast_worker(bot, status_msg, user_ids, message):
         )
     except Exception:
         pass
+
