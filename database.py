@@ -23,11 +23,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 # ==============================
 # Database Configuration
 # ==============================
-DB_HOST = os.getenv("DB_HOST", "localhost")
-DB_NAME = os.getenv("DB_NAME", "postgres")
-DB_USER = os.getenv("DB_USER", "postgres")
-DB_PASS = os.getenv("DB_PASS", "Amira")
-DB_PORT = os.getenv("DB_PORT", "5432")
+import os
+
+DATABASE_URL = os.getenv("DATABASE_URL")
 # ==============================
 # Constants
 # ==============================
@@ -46,14 +44,10 @@ def create_connection_pool() -> bool:
     global connection_pool
     try:
         connection_pool = psycopg2.pool.SimpleConnectionPool(
-            minconn=1,
-            maxconn=20,  # Handle more simultaneous users
-            user=DB_USER,
-            password=DB_PASS,
-            host=DB_HOST,
-            port=DB_PORT,
-            database=DB_NAME
-        )
+    minconn=1,
+    maxconn=20,
+    dsn=DATABASE_URL
+)
         if connection_pool:
             logger.info("✅ Database connection pool created successfully.")
             return True
@@ -1354,3 +1348,4 @@ def update_custom_gate(gate_name: str, site_url: str) -> bool:
         return False
     finally:
         connection_pool.putconn(conn)
+
