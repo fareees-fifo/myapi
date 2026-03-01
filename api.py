@@ -350,7 +350,7 @@ async def start_sequence(chat_id, context, user, is_new_message=True):
 <a href='https://t.me/FailedFr'>⊀</a> <b>𝐌𝒂𝒏𝒆</b> ↬ <a href='tg://user?id={user_id}'>{escaped_first_name}</a> <code>[{html.escape(db_tier)}]</code>
 <a href='https://t.me/FailedFr'>⊀</a> <b>𝐂𝐫𝐞𝐝𝐢𝐭𝐬</b> ↬ <code>{credits_display}</code>
 <a href='https://t.me/FailedFr'>⊀</a> <b>𝐉𝒐𝒏𝒆𝒅</b> ↬ <code>{formatted_joined_date}</code>
-<a href='https://t.me/FailedFr'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>
+<a href='https://t.me/FailedFr'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faresss</a>
 """
         await safe_send_message(context, chat_id, fallback_msg, parse_mode=ParseMode.HTML)
 
@@ -1670,3 +1670,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
