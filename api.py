@@ -305,7 +305,7 @@ async def start_sequence(chat_id, context, user, is_new_message=True):
 <a href='https://t.me/FailedFr'>⊀</a> <b>𝐌𝒂𝒏𝒆</b> ↬ <a href='tg://user?id={user_id}'>{escaped_first_name}</a> <code>[{html.escape(db_tier)}]</code>
 <a href='https://t.me/FailedFr'>⊀</a> <b>𝐂𝐫𝐞𝐝𝐢𝐭𝐬</b> ↬ <code>{credits_display}</code>
 <a href='https://t.me/FailedFr'>⊀</a> <b>𝐉𝒐𝒏𝒆𝒅</b> ↬ <code>{formatted_joined_date}</code>
-<a href='https://t.me/FailedFr'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/FailedFr'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"""
 
     # Send final message directly without animation
     try:
@@ -1183,7 +1183,7 @@ async def handle_buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
 <a href='https://t.me/FailedFr'>⊀</a> <b>𝐌𝒂𝒏𝒈</b> ↬ <a href='tg://user?id={user_id}'>{first_name}</a> <code>[{db_tier}]</code>
 <a href='https://t.me/FailedFr'>⊀</a> <b>𝐂𝒓𝒆𝒅𝒊𝒕𝒔</b> ↬ <code>{credits_display}</code>
 <a href='https://t.me/FailedFr'>⊀</a> <b>𝐉𝒐𝒏𝒆𝒅</b> ↬ <code>{formatted_joined_date}</code>
-<a href='https://t.me/FailedFr'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/FailedFr'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"""
 
         # Edit the current message instead of sending a new one
         try:
@@ -1670,4 +1670,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
