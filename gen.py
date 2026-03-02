@@ -317,7 +317,7 @@ def format_bin_info_for_caption(bin_info: Dict, bin_pattern: str, amount: int) -
 ├─ 𝐂𝐨𝐮𝐧𝐭𝐲: {country}
 └─ 𝐓𝐨𝐩𝐞: {card_type}</pre>
 
-<a href='https://t.me/abtlnx'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/abtlnx'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"""
 
 async def process_generation(user_id: int, bin_pattern: str, month: str, year: str, amount: int, cvv: str, update, context):
     """
@@ -481,3 +481,4 @@ async def handle_gen_command(update, context):
     
     # Start the generation process in the background
     asyncio.create_task(process_generation(user_id, bin_pattern, month, year, amount, cvv, update, context))
+
