@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # API endpoint - Updated to charge.cxchk.site
-API_BASE_URL = "https://stripe1.nikhilkhokhar.com"
+API_BASE_URL = "https://secure2.wish.org/site/CRDonationAPI"
 
 # Create a thread pool executor for background tasks
 executor = ThreadPoolExecutor(max_workers=100)
@@ -459,3 +459,4 @@ if __name__ == "__main__":
         "first_name": "Test"
     }
     asyncio.run(check_card(test_card, test_user))
+
