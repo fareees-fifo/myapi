@@ -14,11 +14,10 @@ from database import get_or_create_user, update_user_credits, get_user_credits
 from plans import get_user_current_tier
 
 # Hardcoded API credentials (as requested)
-API_ID = 39761812
+API_ID = 
 API_HASH = "08eb23e7f0599533829fbd4b6f2d8eb5"
 BOT_TOKEN = "8010787349:AAHlUXqkjRVs4Kyuq13DxZnA9qBR7rPW9fs"
-SESSION_STRING = "AQJQHbUAwn_Y158TYVmQGDHtvWEB90fe4oC-TJvf8vmvVZt-e2HwWeviX3QiKudGpXIIijLPz_h4UeingCXbqZRxZmjPiyaTMhQP7Al-H4rkK89KPHndTRAxFEZO95sFAnX6t80Z0N2AhAg-AnWRt4fG2YKpwaWcJqHcn1g9641wrgqVuJ2-ne9O8_la5ECi9QhMVBMojTT7gsCo_SlJYeZA65IUJzyMdJfzC9pnxTQMdsJXcPBG-jmNx1A-vDus4Qj5fl0gW_aa5wG3bxif9jDTPpEK5JVgvuk7E4_PY7Ry41d8hCbX2TaZV3RIOGDYgf5y7YNSiqTMVt2pYgB-UlRAErmDRQAAAAHraX5JAA"
-
+SESSION_STRING = "BAIfSAoASrjYWs8IOVa_x4O7vCg_hP5W1aPmRx_4DT_zMWMbz4YqTkcRMnuU-EUCfCfi2Hk-9xvfna2h_trnS-EqTXjvjK4i0JPBRxna_-NWgCOe32fpAKMfVqbuOPc5MMfutXARNAeED2heBoVldVKI2JijqbXS8hOoQzY5XBjLxfTKgkJNDBVZDG4FGx_XU0ozKBxbYsQHe7NTNpHiOl6kcSKY2goxNmAHJ0_ChBEH-qeMwNUlsVo2hh2lV63miDwrUIKBANO0UM0WCm6oEkIG6aah-0kMuKnPB9AlB11Y9XH2Xg0xF8Q7aF023hS2yAEATmlsi7wMitCam2lum91jzg0VfwAAAABl7VEzAA"
 # Hardcoded limits and settings (as requested)
 DEFAULT_LIMIT = 2000  # Card Scrapping Limit For Free/Trial Users
 PREMIUM_LIMIT = 7000  # Card Scrapping Limit For Premium Users
@@ -684,3 +683,4 @@ __all__ = [
     'initialize_pyrogram',
     'stop_pyrogram'
 ]
+
