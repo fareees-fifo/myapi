@@ -613,7 +613,7 @@ def format_mass_response(result: Dict, user_info: Dict) -> Tuple[str, str]:
     proxy_part = f"<a href='https://t.me/farxxes'>⌬</a> 𝐏𝐱 ↬ {proxy_emoji}"    
     
     # Add developer part with hyperlink
-    dev_part = f"<a href='https://t.me/farxxes'>⌬</a> 𝐃𝐞𝐯 ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a> / {proxy_part}"
+    dev_part = f"<a href='https://t.me/farxxes'>⌬</a> 𝐃𝐞𝐯 ↬ <a href='https://t.me/farxxes'>faress</a> / {proxy_part}"
     
     # Combine all parts
     formatted_response = f"{status_part}\n{card_part}\n{gateway_part}\n{response_part}\n{price_part}\n{bank_part}\n{user_part}\n{dev_part}"
@@ -701,7 +701,7 @@ def format_progress_response(stats: Dict, user_id: int, session_id: str) -> Tupl
 <a href='https://t.me/farxxes'>⊀</a> 𝐃𝐞𝐜𝐥𝐢𝐧𝐞𝐝 ❌ ↬ <code>{stats["declined"]}</code>
 <a href='https://t.me/farxxes'>⊀</a> 𝐄𝐫𝐫𝐨𝐫 𝐂𝚊𝐫𝐝𝐬 ⚠️ ↬ <code>{stats["error"]}</code>
 <a href='https://t.me/farxxes'>⌬</a> 𝐒𝐭𝐨𝐩 𝐂𝐨𝐦𝐚𝐧𝐝 ↬ <code>/stop {session_id}</code>
-<a href='https://t.me/farxxes'>⌬</a> 𝐃𝐞𝐯 ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/farxxes'>⌬</a> 𝐃𝐞𝐯 ↬ <a href='https://t.me/farxxes'>faress</a>"""
     
     # No inline keyboard needed since we're using /stop command
     reply_markup = None
@@ -733,7 +733,7 @@ def format_stopped_response(stats: Dict, elapsed_time: float, user_name: str, se
 <a href='https://t.me/farxxes'>⊀</a> 𝐄𝐫𝐫𝐨𝐫 𝐂𝚊𝐫𝐝𝐬 ⚠️ ↬ <code>{stats["error"]}</code>
 <a href='https://t.me/farxxes'>⊀</a> 𝐓𝐢𝐦𝐞 ↬ <code>{elapsed_time}s</code> ⏱️
 <a href='https://t.me/farxxes'>⊀</a> 𝐂𝐡𝐞𝐜𝐤 𝐁𝐲 ↬ <code>{user_name}</code>
-<a href='https://t.me/farxxes'>⌬</a> 𝐃𝐞𝐯 ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/farxxes'>⌬</a> 𝐃𝐞𝐯 ↬ <a href='https://t.me/farxxes'>faress</a>"""
     
     return stopped_msg
 
@@ -770,7 +770,7 @@ def format_final_response(stats: Dict, elapsed_time: float, user_name: str, stop
 <a href='https://t.me/farxxes'>⊀</a> 𝐄𝐫𝐫𝐨𝐫 𝐂𝚊𝐫𝐝𝐬 ⚠️ ↬ <code>{stats["error"]}</code>
 <a href='https://t.me/farxxes'>⊀</a> 𝐓𝐢𝐦𝐞 ↬ <code>{elapsed_time}s</code> ⏱️
 <a href='https://t.me/farxxes'>⊀</a> 𝐂𝐡𝐞𝐜𝐤 𝐁𝐲 ↬ <code>{user_name}</code>
-<a href='https://t.me/farxxes'>⌬</a> 𝐃𝐞𝐯 ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/farxxes'>⌬</a> 𝐃𝐞𝐯 ↬ <a href='https://t.me/farxxes'>faress</a>"""
     
     return final_msg
 
@@ -1651,3 +1651,4 @@ if __name__ == "__main__":
             print(formatted)
     
     asyncio.run(test())
+
