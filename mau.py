@@ -445,7 +445,7 @@ def format_response_stripe_auth(result: dict, user_info: dict) -> Tuple[str, str
 <a href='https://t.me/farxxes'>⊀</a> <b>𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞</b> ↬ <code>{message}</code>
 {bank_part}
 <a href='https://t.me/farxxes'>⌬</a> <b>𝐔𝐬𝐞𝐫</b> ↬ {user_link} 
-<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"""
     
     return formatted_response, status_category
 
@@ -514,7 +514,7 @@ def format_progress_response(stats: Dict, session_id: str) -> Tuple[str, InlineK
 <a href='https://t.me/farxxes'>⊀</a> <b>❌ 𝐃𝐞𝐜𝐥𝐢𝐧𝐞𝐝</b> ↬ <code>{stats["declined"]}</code>
 <a href='https://t.me/farxxes'>⊀</a> <b>⚠️ 𝐄𝐫𝐫𝐨𝐫 𝐂𝐚𝐫𝐝𝐬</b> ↬ <code>{stats["error"]}</code>
 <a href='https://t.me/farxxes'>⌬</a> <b>𝐒𝐭𝐨𝐩 𝐂𝐨𝐦𝐦𝐚𝐧𝐝</b> ↬ <code>/stop {session_id}</code>
-<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"""
     
     # No inline keyboard needed since we're using /stop command
     reply_markup = None
@@ -545,7 +545,7 @@ def format_stopped_response(stats: Dict, elapsed_time: float, user_name: str, se
 <a href='https://t.me/farxxes'>⊀</a> <b>⚠️ 𝐄𝐫𝐫𝐨𝐫 𝐂𝐚𝐫𝐝𝐬</b> ↬ <code>{stats["error"]}</code>
 <a href='https://t.me/farxxes'>⊀</a> <b>𝑻𝒊𝒎𝒆</b> ↬ <code>{elapsed_time}s</code> ⏱️
 <a href='https://t.me/farxxes'>⌬</a> <b>𝐂𝐡𝐞𝐜𝐤 𝐁𝐲</b> ↬ <code>{user_name}</code>
-<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"""
     
     return stopped_msg
 
@@ -581,7 +581,7 @@ def format_final_response(stats: Dict, elapsed_time: float, user_name: str, stop
 <a href='https://t.me/farxxes'>⊀</a> <b>⚠️ 𝐄𝐫𝐫𝐨𝐫 𝐂𝐚𝐫𝐝𝐬</b> ↬ <code>{stats["error"]}</code>
 <a href='https://t.me/farxxes'>⊀</a> <b>𝑻𝒊𝒎𝒆</b> ↬ <code>{elapsed_time}s</code> ⏱️
 <a href='https://t.me/farxxes'>⌬</a> <b>𝐂𝐡𝐞𝐜𝐤 𝐁𝐲</b> ↬ <code>{user_name}</code>
-<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"""
     
     return final_msg
 
@@ -1239,3 +1239,4 @@ if __name__ == "__main__":
             print(formatted)
     
     asyncio.run(test())
+
