@@ -259,7 +259,7 @@ async def start_sequence(chat_id, context, user, is_new_message=True):
 <a href='https://t.me/FailedFr'>⚠️</a> <b>Database Connection Timeout</b>
 <pre>⊀ Error: Database request timed out</pre>
 <a href='https://t.me/FailedFr'>ℭ</a> <b>Action Required:</b> Please try again later
-<a href='https://t.me/FailedFr'>⌬</a> <b>Support:</b> <a href='https://t.me/FailedFr'>kคli liຖนxx</a>
+<a href='https://t.me/FailedFr'>⌬</a> <b>Support:</b> <a href='https://t.me/FailedFr'>farxxes</a>
 """
         await safe_send_message(context, chat_id, error_msg, parse_mode=ParseMode.HTML)
         return
@@ -269,7 +269,7 @@ async def start_sequence(chat_id, context, user, is_new_message=True):
 <a href='https://t.me/FailedFr'>⚠️</a> <b>Database Connection Failed</b>
 <pre>⊀ Error: Unable to connect to database</pre>
 <a href='https://t.me/FailedFr'>ℭ</a> <b>Action Required:</b> Please contact support
-<a href='https://t.me/FailedFr'>⌬</a> <b>Support:</b> <a href='https://t.me/farxxes'>kคli liຖนxx</a>
+<a href='https://t.me/FailedFr'>⌬</a> <b>Support:</b> <a href='https://t.me/farxxes'>faress</a>
 """
         await safe_send_message(context, chat_id, error_msg, parse_mode=ParseMode.HTML)
         return
@@ -1670,3 +1670,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
