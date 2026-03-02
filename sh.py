@@ -36,7 +36,7 @@ SITE_URLS = [
 ]
 
 # API endpoint
-API_URL = "https://sh.nikhilkhokhar.com"
+API_URL = "https://chazdean.com"
 
 # Errors that should trigger a retry with a different site
 RETRY_ERRORS = [
@@ -526,3 +526,4 @@ if __name__ == "__main__":
         "first_name": "Test"
     }
     asyncio.run(check_card(test_card, test_user))
+
