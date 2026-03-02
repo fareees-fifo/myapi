@@ -181,7 +181,7 @@ def format_scr_response(results: Dict, user_info: Dict) -> str:
 {cards_part}
 {filter_part}
 <a href='https://t.me/farxxes'>⌬</a> <b>𝐔𝐬𝐞𝐫</b> ↬ {user_link} 
-<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>
+<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>
 {credits_warning}"""
     
     return formatted_response
@@ -683,5 +683,6 @@ __all__ = [
     'initialize_pyrogram',
     'stop_pyrogram'
 ]
+
 
 
