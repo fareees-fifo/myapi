@@ -380,7 +380,7 @@ def format_response_payfast(result: dict, user_info: dict) -> Tuple[str, str]:
 <a href='https://t.me/farxxes'>⊀</a> <b>𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞</b> ↬ <code>{message}</code>
 {bank_part}
 <a href='https://t.me/farxxes'>⌬</a> <b>𝐔𝐬𝐞𝐫</b> ↬ {user_link} 
-<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/farxxes'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"""
     
     return formatted_response, status_category
 
@@ -542,3 +542,4 @@ if __name__ == "__main__":
         print(formatted)
     
     asyncio.run(test())
+
