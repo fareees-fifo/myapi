@@ -1219,7 +1219,7 @@ async def handle_buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
 <a href='https://t.me/FailedFr'>ℭ</a> <b>Action Required:</b> Please try again later
 <a href='https://t.me/FailedFr'>⌬</a> <b>Support:</b> <a href='https://t.me/farxxes'>faress</a>
 """
-            logging.error(f"Error updating profile: {e}")0
+            logging.error(f"Error updating profile: {e}")
             await safe_edit_message(
                 context=context,
                 chat_id=chat_id,
@@ -1670,6 +1670,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
