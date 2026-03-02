@@ -298,7 +298,7 @@ def format_response(url: str, cms: str, security: str, gateways: str,
 <a href='https://t.me/farxxes'>⊀</a> <b>𝐆𝐑𝐀𝐏𝐇𝐐𝐋</b> ↬ <code>{graphql}</code>"""
     
     # Add dev link
-    response += "\n<a href='https://t.me/abtlnx'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"
+    response += "\n<a href='https://t.me/abtlnx'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"
     
     return response
 
@@ -437,3 +437,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
