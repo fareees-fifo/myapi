@@ -331,7 +331,7 @@ async def start_sequence(chat_id, context, user, is_new_message=True):
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("Gates", callback_data="menu_gates"), InlineKeyboardButton("Pricing", callback_data="menu_pricing")],
-                [InlineKeyboardButton("Group", url="https://t.me/+IFFnzNZuHFU5YmQ0"), InlineKeyboardButton("Updates", url="https://t.me/+E6zoRhIFhtNmM2E5")],
+                [InlineKeyboardButton("Group", url="https://t.me/faresssteam"), InlineKeyboardButton("Updates", url="https://t.me/faresssteam")],
                 [InlineKeyboardButton("Dev", url="https://t.me/farxxes"), InlineKeyboardButton("Support", url="https://t.me/farxxes")]
             ]),
         )
@@ -1195,7 +1195,7 @@ async def handle_buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     media=InputMediaPhoto(media=photo_file_id, caption=caption.strip(), parse_mode=ParseMode.HTML),
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton("Gates", callback_data="menu_gates"), InlineKeyboardButton("Pricing", callback_data="menu_pricing")],
-                        [InlineKeyboardButton("Group", url="https://t.me/+IFFnzNZuHFU5YmQ0"), InlineKeyboardButton("Updates", url="https://t.me/+E6zoRhIFhtNmM2E5")],
+                        [InlineKeyboardButton("Group", url="https://t.me/faresssteam"), InlineKeyboardButton("Updates", url="https://t.me/faresssteam")],
                         [InlineKeyboardButton("Dev", url="https://t.me/farxxes"), InlineKeyboardButton("Support", url="https://t.me/farxxes")]
                     ])
                 )
@@ -1208,7 +1208,7 @@ async def handle_buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     parse_mode=ParseMode.HTML,
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton("Gates", callback_data="menu_gates"), InlineKeyboardButton("Pricing", callback_data="menu_pricing")],
-                        [InlineKeyboardButton("Group", url="https://t.me/+IFFnzNZuHFU5YmQ0"), InlineKeyboardButton("Updates", url="https://t.me/+E6zoRhIFhtNmM2E5")],
+                        [InlineKeyboardButton("Group", url="https://t.me/faresssteam"), InlineKeyboardButton("Updates", url="https://t.me/faresssteam")],
                         [InlineKeyboardButton("Dev", url="https://t.me/farxxes"), InlineKeyboardButton("Support", url="https://t.me/farxxes")]
                     ])
                 )
@@ -1217,9 +1217,9 @@ async def handle_buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
 <a href='https://t.me/FailedFr'>⚠️</a> <b>System Error</b>
 <pre>⊀ Error: {str(e)}</pre>
 <a href='https://t.me/FailedFr'>ℭ</a> <b>Action Required:</b> Please try again later
-<a href='https://t.me/FailedFr'>⌬</a> <b>Support:</b> <a href='https://t.me/farxxes'>kคli liຖนxx</a>
+<a href='https://t.me/FailedFr'>⌬</a> <b>Support:</b> <a href='https://t.me/farxxes'>faress</a>
 """
-            logging.error(f"Error updating profile: {e}")
+            logging.error(f"Error updating profile: {e}")0
             await safe_edit_message(
                 context=context,
                 chat_id=chat_id,
@@ -1670,5 +1670,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
