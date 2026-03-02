@@ -266,7 +266,7 @@ def format_response_paypal(api_response: dict, user_info: dict, card_details: st
 <a href='https://t.me/abtlnx'>⊀</a> <b>𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞</b> ↬ <code>{response_text}</code>
 {bank_part}
 <a href='https://t.me/abtlnx'>⌬</a> <b>𝐔𝐬𝐞𝐫</b> ↬ {user_link} 
-<a href='https://t.me/abtlnx'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>kคli liຖนxx</a>"""
+<a href='https://t.me/abtlnx'>⌬</a> <b>𝐃𝐞𝐯</b> ↬ <a href='https://t.me/farxxes'>faress</a>"""
     
     return formatted_response
 
@@ -404,3 +404,4 @@ if __name__ == "__main__":
         "first_name": "Test"
     }
     asyncio.run(check_card_paypal(test_card, test_user))
+
