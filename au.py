@@ -440,8 +440,8 @@ async def handle_au_command(update, context):
         if time_diff < timedelta(seconds=10):
             remaining_seconds = 10 - int(time_diff.total_seconds())
             await update.message.reply_text(
-                f"⏳ <b>Please wait {remaining_seconds} seconds before using this command again.</b>\n\n"
-                f"<i>Upgrade your plan to remove the time limit.</i>",
+                f"⏳ Please wait {remaining_seconds} seconds before using this command again.\n\n"
+                f"Upgrade your plan to remove the time limit.",
                 parse_mode=None
             )
             return
@@ -598,6 +598,7 @@ if __name__ == "__main__":
         print(formatted)
     
     asyncio.run(test())
+
 
 
 
