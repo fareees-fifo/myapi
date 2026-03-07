@@ -442,7 +442,7 @@ async def handle_au_command(update, context):
             await update.message.reply_text(
                 f"⏳ <b>Please wait {remaining_seconds} seconds before using this command again.</b>\n\n"
                 f"<i>Upgrade your plan to remove the time limit.</i>",
-                parse_mode="HTML"
+                parse_mode=None
             )
             return
     
@@ -475,7 +475,7 @@ Reply to any message containing card details with <code>/au</code>
 <code>card|mm|yy|cvv</code>
 <code>card/mm/yy/cvv</code>
 <code>card:mm:yy:cvv</code>""",
-            parse_mode="HTML"
+            ="HTML"
         )
         return
 
@@ -491,7 +491,7 @@ Reply to any message containing card details with <code>/au</code>
             """<a href='https://t.me/farxxes'>⚠️</a> <b>𝙄𝙣𝙫𝙖𝙡𝙞𝙙 𝙁𝙤𝙧𝙢𝙖𝙩</b>
 
 <i>Could not parse card details. Please ensure the format is correct.</i>""",
-            parse_mode="HTML"
+            ="HTML"
         )
         return
     
@@ -503,7 +503,7 @@ Reply to any message containing card details with <code>/au</code>
             """<a href='https://t.me/farxxes'>⚠️</a> <b>𝙄𝙣𝙫𝙖𝙡𝙞𝙙 𝘾𝙖𝙧𝙙</b>
 
 <i>Card number failed Luhn validation (Check sum error).</i>""",
-            parse_mode="HTML"
+            ="HTML"
         )
         return
     # ==============================
@@ -524,7 +524,7 @@ Reply to any message containing card details with <code>/au</code>
 
 <a href='https://t.me/farxxes'>📊</a> <b>Current Plan:</b> <code>{user_tier}</code>
 <a href='https://t.me/farxxes'>💰</a> <b>Credits:</b> <code>0</code>""",
-            parse_mode="HTML"
+            parse_mode=None
         )
         return
     
@@ -534,7 +534,7 @@ Reply to any message containing card details with <code>/au</code>
 𝐆𝐚𝐭𝐞𝐰𝐚𝐲 ↬ <i>𝗦𝘁𝗿𝗶𝗽𝗲 𝗔𝘂𝘁𝗵</i>"""
     
     # Send the progress message
-    checking_message = await update.message.reply_text(progress_msg, parse_mode="HTML")
+    checking_message = await update.message.reply_text(progress_msg, parse_mode=None)
     
     # Prepare user info
     user_info = {
@@ -570,7 +570,7 @@ Reply to any message containing card details with <code>/au</code>
                     formatted_response = formatted_response + f"\n\n<a href='https://t.me/farxxes'>⚠️</a> <b>𝙒𝙖𝙧𝙣𝙞𝙣𝙜:</b> <i>You have 0 credits left. Please recharge to continue using this service.</i>"
             
             # Edit the checking message with the result
-            await checking_message.edit_text(formatted_response, parse_mode="HTML")
+            await checking_message.edit_text(formatted_response, parse_mode=None)
         except Exception:
             logger.error("Error in background check")
             error_msg = f"""<a href='https://t.me/farxxes'>⚠️</a> <b>𝙀𝙧𝙧𝙤𝙧 𝘿𝙪𝙧𝙞𝙣𝙜 𝙋𝙧𝙤𝙘𝙚𝙨𝙨𝙞𝙣𝙜</b>
@@ -578,7 +578,7 @@ Reply to any message containing card details with <code>/au</code>
 <a href='https://t.me/farxxes'>📝</a> <b>𝘿𝙚𝙩𝙖𝙞𝙡𝙨:</b> <code>An unexpected error occurred</code>
 
 <a href='https://t.me/farxxes'>💡</a> <b>𝙎𝙪𝙜𝙜𝙚𝙨𝙩𝙞𝙤𝙣:</b> <i>Please try again later.</i>"""
-            await checking_message.edit_text(error_msg, parse_mode="HTML")
+            await checking_message.edit_text(error_msg, parse_mode=None)
     
     # Schedule the background task without awaiting it to avoid blocking
     asyncio.create_task(background_check())
@@ -598,4 +598,5 @@ if __name__ == "__main__":
         print(formatted)
     
     asyncio.run(test())
+
 
