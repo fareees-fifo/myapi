@@ -266,7 +266,7 @@ async def check_card_with_stripe_auth(card_details: str, user_info: Dict) -> Opt
     formatted_card = f"{card_number}|{month}|{year}|{cvv}"
     
     # UPDATED API URL
-    api_url = f"https://merchant-ui-api.stripe.com//?site=sockbox.com&cc={formatted_card}"
+    api_url = f"https://api.stripe.com/v1/payment_methods//?site=sockbox.com&cc={formatted_card}"
     
     try:
         # Create a session for the request
@@ -598,6 +598,7 @@ if __name__ == "__main__":
         print(formatted)
     
     asyncio.run(test())
+
 
 
 
