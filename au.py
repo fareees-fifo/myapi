@@ -503,7 +503,7 @@ parse_mode="HTML"
             """<a href='https://t.me/farxxes'>⚠️</a> <b>𝙄𝙣𝙫𝙖𝙡𝙞𝙙 𝘾𝙖𝙧𝙙</b>
 
 <i>Card number failed Luhn validation (Check sum error).</i>""",
-            ="HTML"
+parse_mode="HTML"
         )
         return
     # ==============================
@@ -598,6 +598,7 @@ if __name__ == "__main__":
         print(formatted)
     
     asyncio.run(test())
+
 
 
 
