@@ -475,7 +475,7 @@ Reply to any message containing card details with <code>/au</code>
 <code>card|mm|yy|cvv</code>
 <code>card/mm/yy/cvv</code>
 <code>card:mm:yy:cvv</code>""",
-            ="HTML"
+           parse_mode="HTML"
         )
         return
 
@@ -598,5 +598,6 @@ if __name__ == "__main__":
         print(formatted)
     
     asyncio.run(test())
+
 
 
