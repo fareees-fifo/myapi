@@ -282,7 +282,7 @@ async def check_card_with_stripe_auth(card_details: str, user_info: Dict) -> Opt
                     }
                 
                 # Parse the JSON response
-                api_response = await response.json()
+                api_response = await response.text()
                 
                 # Check if we got a valid response
                 if not api_response:
@@ -598,6 +598,7 @@ if __name__ == "__main__":
         print(formatted)
     
     asyncio.run(test())
+
 
 
 
