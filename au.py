@@ -491,7 +491,7 @@ parse_mode="HTML"
             """<a href='https://t.me/farxxes'>⚠️</a> <b>𝙄𝙣𝙫𝙖𝙡𝙞𝙙 𝙁𝙤𝙧𝙢𝙖𝙩</b>
 
 <i>Could not parse card details. Please ensure the format is correct.</i>""",
-            ="HTML"
+parse_mode="HTML"
         )
         return
     
@@ -598,6 +598,7 @@ if __name__ == "__main__":
         print(formatted)
     
     asyncio.run(test())
+
 
 
 
